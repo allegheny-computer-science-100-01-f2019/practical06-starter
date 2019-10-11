@@ -171,16 +171,16 @@ Janyl Jumadinova Thu Oct 10 22:32:00 EDT 2019
 Please enter a password.
 onetwo
 Pass: Your password does not contain a space!
-Fail: Your password does not meet the length requirement
+Fail: Your password does not meet the length requirement!
 Fail: Your password does not contain a digit!
-Fail: Your password does not contain an upper case letter
+Fail: Your password does not contain an upper case letter!
 Your password does not satisfy all requirements.
 Please enter another password
 one two three
-Fail: Your password contains a space
+Fail: Your password contains a space!
 Pass: Your password meets the length requirement!
 Fail: Your password does not contain a digit!
-Fail: Your password does not contain an upper case letter
+Fail: Your password does not contain an upper case letter!
 Your password does not satisfy all requirements.
 Please enter another password
 Onetwothree4
