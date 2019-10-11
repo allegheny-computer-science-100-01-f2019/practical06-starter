@@ -1,0 +1,42 @@
+---
+name: cs100-01-practical06
+break: true
+indent: 4
+---
+
+# GatorGrader configuration file
+
+# Learn more about GatorGrader and its supported checks by visiting this web site:
+# https://github.com/GatorEducator/gatorgrader
+
+# Explanation:
+# --> a check without an "--exact" runs a count for an entity as an "at least"
+# --> checks below a file in a specified directory are for that specific file and directory
+# --> checks that appear stand-alone are for an entire Git repository
+
+# --> check the source code for various characteristics
+src/main:
+    java:
+        practicalsix/PasswordChecker.java:
+            ConfirmFileExists
+            CountSingleLineComments --language Java --count 10
+            CountMultipleLineComments --language Java --count 2
+            MatchFileFragment --fragment "TODO" --count 0 --exact
+            MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
+            MatchFileFragment --fragment "import java.util.Date" --count 1 --exact
+            MatchFileFragment --fragment "new Date()" --count 1 --exact
+            MatchFileFragment --fragment "new Scanner(System.in)" --count 1 --exact
+            MatchFileFragment --fragment "next" --count 2 --exact
+            MatchFileFragment --fragment "System.out.println" --count 10
+            MatchFileFragment --fragment "int" --count 1
+            MatchFileFragment --fragment "boolean" --count 1
+            MatchFileFragment --fragment "while" --count 1
+            MatchFileFragment --fragment "if" --count 4
+            MatchFileFragment --fragment "else" --count 4
+
+# --> check that the number of commits in the Git repository is beyond a threshold
+CountCommits --count 3
+
+# --> check that the program executes correctly
+ExecuteCommand --command "gradle build"
+# ExecuteCommand --command "gradle -q --console plain run"
