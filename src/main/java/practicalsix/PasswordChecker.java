@@ -11,7 +11,6 @@ import java.util.Scanner;
 
 public class PasswordChecker {
 
-  private static final int MAX_TRIES = 5;
   private static int PASSWORD_MINIMUM_LENGTH = 8;
 
   /**
@@ -38,7 +37,7 @@ public class PasswordChecker {
     boolean isValidPassword = false;
 
 
-    // Repeatedly check the password for all requirements
+    // Repeatedly check the password for all requirements until all are met
     while (isValidPassword == false) {
 
       // TODO: check if the password contains space

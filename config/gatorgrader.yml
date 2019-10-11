@@ -33,6 +33,8 @@ src/main:
             MatchFileFragment --fragment "while" --count 1
             MatchFileFragment --fragment "if" --count 4
             MatchFileFragment --fragment "else" --count 4
+            MatchFileFragment --fragment "||" --count 4
+            MatchFileFragment --fragment "&&" --count 4
 
 # --> check that the number of commits in the Git repository is beyond a threshold
 CountCommits --count 3
