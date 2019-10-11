@@ -57,7 +57,7 @@ script:
   - gradle clean
   - gradle check
   - gradle build
-  - gradle run
+  # - gradle run
   # GatorGrader: see config/gatorgrader.yml for details about all checks;
   # not that grading skips the build task since submitted code may not build
   - gradle grade -x build
